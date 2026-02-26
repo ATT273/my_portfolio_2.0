@@ -46,7 +46,6 @@ const Skills = () => {
           <p className="text-neutral-900 font-semibold text-xl">Tools & Others: </p>
           <TechItem Icon={GitIcon} name="Git" />
           <TechItem Icon={JiraIcon} name="Jira" />
-          {/* <TechItem Icon={TailwindIcon} name="Tailwind CSS" /> */}
         </div>
       </div>
     </section>

@@ -6,7 +6,6 @@ import PetProjects from "./components/PetProjects";
 import Sidebar from "./components/Sidebar";
 import Skills from "./components/Skills";
 import TopBanner from "./components/TopBanner";
-import Topbar from "./components/Topbar";
 import Works from "./components/Works";
 
 function App() {
