@@ -4,6 +4,7 @@ import type { PageAnchor } from "../types";
 interface PageContextType {
   activeSection: PageAnchor;
   navigateToSection: (section: PageAnchor) => void;
+  setActiveSection: React.Dispatch<React.SetStateAction<PageAnchor>>;
 }
 
 interface PageProviderProps {
@@ -21,7 +22,7 @@ const PageProvider = ({ children }: PageProviderProps) => {
 
   const navigateToSection = (section: PageAnchor) => {
     setActiveSection(section);
-    window.location.hash = section;
+    // window.location.hash = section;
 
     // Optional: Smooth scroll
     const element = document.getElementById(section);
@@ -43,8 +44,11 @@ const PageProvider = ({ children }: PageProviderProps) => {
     };
   }, []);
 
-  console.log("Active Section:", activeSection);
-  return <PageContext.Provider value={{ activeSection, navigateToSection }}>{children}</PageContext.Provider>;
+  return (
+    <PageContext.Provider value={{ activeSection, navigateToSection, setActiveSection }}>
+      {children}
+    </PageContext.Provider>
+  );
 };
 
 // eslint-disable-next-line react-refresh/only-export-components

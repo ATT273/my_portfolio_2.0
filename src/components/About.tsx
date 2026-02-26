@@ -5,7 +5,7 @@ import PortraitImage from "../assets/images/portrait.png";
 
 const About = () => {
   return (
-    <div id="about" className="mb-16 flex flex-col gap-8">
+    <section id="about" className="mb-16 flex flex-col gap-8">
       <h2 className="p-4 mb-8 font-bold text-3xl text-center bg-neutral-50">ABOUT</h2>
       <div className="flex flex-1 justify-center gap-4">
         <div className="flex flex-col gap-4">
@@ -27,9 +27,8 @@ const About = () => {
           </div>
           <div className="p-4 text-lg rounded-lg bg-neutral-50">
             <p className="text-xl font-bold">Contact Info</p>
-            <p>Hanoi, VietNam</p>
             <p>
-              <b>Location: </b> Hanoi, VN
+              <b>Location: </b> Hanoi, Viet Nam
             </p>
             <p>
               <b>Email: </b>anhtuan273@gmail.com
@@ -58,7 +57,7 @@ const About = () => {
         </div>
       </div>
       <div id="exp" className="division-line"></div>
-    </div>
+    </section>
   );
 };
 

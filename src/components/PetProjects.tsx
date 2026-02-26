@@ -9,7 +9,7 @@ const PROJECTS = [
 
 const PetProjects = () => {
   return (
-    <div id="projects" className="mb-16 flex flex-col gap-8">
+    <section id="projects" className="mb-16 flex flex-col gap-8">
       <h2 className="p-4 mb-8 font-bold text-3xl text-center bg-neutral-50">PET PROJECTS</h2>
       <div className="text-stone-200 flex flex-wrap justify-center items-center">
         {PROJECTS.map((item) => {
@@ -30,7 +30,7 @@ const PetProjects = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

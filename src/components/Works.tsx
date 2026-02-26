@@ -12,7 +12,7 @@ const PROJECTS = [
 ];
 const Works = () => {
   return (
-    <div id="works" className="mb-16 flex flex-col gap-8">
+    <section id="works" className="mb-16 flex flex-col gap-8">
       <h2 className="p-4 mb-8 font-bold text-3xl text-center bg-neutral-50">WORKS</h2>
       <div className="works-section text-stone-200 flex flex-wrap justify-center items-center">
         {PROJECTS.map((item) => {
@@ -33,7 +33,7 @@ const Works = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

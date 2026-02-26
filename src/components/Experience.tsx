@@ -2,7 +2,7 @@ import { CircleChevronRight } from "lucide-react";
 
 const Experience = () => {
   return (
-    <div id="exp" className="flex flex-col gap-8 mb-16">
+    <section id="exp" className="flex flex-col gap-8 mb-16">
       <h2 className="p-4 mb-8 font-bold text-3xl text-center bg-neutral-50">EDUCATION & EXPERIENCE</h2>
       <div className="flex flex-col xp-section px-50 gap-8">
         <section className="edu-section bg-neutral-50 rounded-md p-4">
@@ -34,7 +34,7 @@ const Experience = () => {
               <div className="grid grid-cols-[30px_1fr] items-center">
                 <div className="size-5" />
                 <div>
-                  <p className="font-normal">year 2024- 2025</p>
+                  <p className="font-normal">year 2024- 2026</p>
                   <p className="font-normal">Position: Fullstack Developer </p>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const Experience = () => {
           </ul>
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 
