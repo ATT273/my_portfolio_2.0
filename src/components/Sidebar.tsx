@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { UserRound } from "lucide-react";
 import { usePageContext } from "./PageProvider";
 import { NAVIGATION_ITEMS } from "../constants/navigation.constants";
@@ -34,19 +35,20 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="fixed w-14 h-52 top-1/2 left-4 -translate-y-1/2 flex justify-center bg-neutral-50 z-30 rounded-md overflow-hidden shadow-md">
+    <div className="fixed w-10 h-50 top-1/2 left-4 -translate-y-1/2 flex justify-center bg-transparent hover:bg-neutral-50 duration-500 z-30 rounded-md overflow-hidden shadow-md  group">
       <ul id="sidebar" className="sidebar-items text-stone-200 flex flex-col w-full">
         {NAVIGATION_ITEMS.filter((item) => item.key !== "home").map((item) => {
           return (
             <a
+              key={item.key}
               href={`#${item.key}`}
-              className={`flex flex-1 hover:bg-gray-200 ${activeSection === item.key ? "bg-yellow-300" : ""}`}
+              className={`flex flex-1 hover:bg-gray-200 ${activeSection === item.key ? "bg-yellow-300 text-slate-800" : "text-neutral-100"}`}
               onClick={(e) => {
                 e.preventDefault();
                 navigateToSection(item.key);
               }}
             >
-              <li className="flex flex-1 justify-center items-center text-neutral-900!">
+              <li className="flex flex-1 justify-center items-center text-neutral-100! group-hover:text-neutral-900!">
                 {item.icon ? <item.icon /> : <UserRound />}
               </li>
             </a>

@@ -14,8 +14,8 @@ const JiraIcon = ({ className }: Props) => {
           y2="14.842"
           gradientTransform="scale(4)"
         >
-          <stop offset=".176" stop-color="#0052cc" />
-          <stop offset="1" stop-color="#2684ff" />
+          <stop offset=".176" stopColor="#0052cc" />
+          <stop offset="1" stopColor="#2684ff" />
         </linearGradient>
         <linearGradient
           id="jira-original-b"
@@ -26,8 +26,8 @@ const JiraIcon = ({ className }: Props) => {
           y2="21.094"
           gradientTransform="scale(4)"
         >
-          <stop offset=".176" stop-color="#0052cc" />
-          <stop offset="1" stop-color="#2684ff" />
+          <stop offset=".176" stopColor="#0052cc" />
+          <stop offset="1" stopColor="#2684ff" />
         </linearGradient>
       </defs>
       <path

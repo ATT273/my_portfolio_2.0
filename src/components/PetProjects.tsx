@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import RPGImage from "../assets/images/react-rpg.jpg";
 import TravelImage from "../assets/images/travel.jpg";
+import SectionTitle from "./shared/SectionTitlte";
 
 const PROJECTS = [
   { name: "Next RPG Game", url: "https://next-rpg-game.netlify.app/", image: RPGImage },
@@ -10,8 +11,8 @@ const PROJECTS = [
 const PetProjects = () => {
   return (
     <section id="projects" className="mb-16 flex flex-col gap-8">
-      <h2 className="p-4 mb-8 font-bold text-3xl text-center bg-neutral-50">PET PROJECTS</h2>
-      <div className="text-stone-200 flex flex-wrap justify-center items-center">
+      <SectionTitle title="PET PROJECTS" />
+      <div className="text-stone-200 flex flex-wrap justify-center items-center w-262 m-auto">
         {PROJECTS.map((item) => {
           return (
             <div key={item.name} className="relative size-80 m-5 group overflow-hidden">

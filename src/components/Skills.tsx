@@ -14,39 +14,37 @@ import TailwindIcon from "../assets/icons/tailwind-icon";
 import ExpressjsIcon from "../assets/icons/expressjs-icon";
 import JiraIcon from "../assets/icons/jira-icon";
 import GitIcon from "../assets/icons/git-icon";
+import SectionTitle from "./shared/SectionTitlte";
+import TechStackList from "./shared/TechStackList";
+import NodeIcon from "../assets/icons/node-icon";
 
 const Skills = () => {
   return (
     <section id="skills" className="mb-16 flex flex-col gap-8">
-      <h2 className="p-4 mb-8 font-bold text-3xl text-center bg-neutral-50">TECH STACK</h2>
-      <div className="works-section text-stone-200 flex flex-col flex-wrap gap-4 items-start w-1/2 m-auto">
-        <div className="flex justify-start gap-4 items-center">
-          <p className="text-neutral-900 font-semibold text-xl">Languages: </p>
-          <TechItem Icon={JsIcon} name="Javascript" />
+      <SectionTitle title="TECH STACK" />
+      <div className="works-section text-stone-200 flex flex-col flex-wrap gap-4 items-start w-262 m-auto">
+        <TechStackList title="Front-end: ">
+          <TechItem Icon={ReactIcon} name="React" />
+          <TechItem Icon={NextjsIcon} name="Next.js" />
+          <TechItem Icon={VueIcon} name="Vue.js" />
+          <TechItem Icon={NuxtIcon} name="Nuxt.js" />
           <TechItem Icon={TypescriptIcon} name="Typescript" />
+          <TechItem Icon={JsIcon} name="Javascript" />
           <TechItem Icon={HtmlIcon} name="HTML" />
           <TechItem Icon={CssIcon} name="CSS" />
-          <TechItem Icon={PhpIcon} name="PHP" />
-        </div>
-        <div className="flex justify-start gap-4">
-          <p className="text-neutral-900 font-semibold text-xl">Frameworks: </p>
-          <TechItem Icon={NextjsIcon} name="Next.js" />
-          <TechItem Icon={NuxtIcon} name="Nuxt.js" />
+        </TechStackList>
+        <TechStackList title="Back-end: ">
+          <TechItem Icon={NodeIcon} name="Node.js" />
           <TechItem Icon={NestjsIcon} name="Nest.js" />
           <TechItem Icon={ExpressjsIcon} name="Express.js" />
+          <TechItem Icon={PhpIcon} name="PHP" />
           <TechItem Icon={LaravelIcon} name="Laravel" />
-        </div>
-        <div className="flex justify-start gap-4">
-          <p className="text-neutral-900 font-semibold text-xl">Libraries: </p>
-          <TechItem Icon={ReactIcon} name="React" />
-          <TechItem Icon={VueIcon} name="Vue.js" />
-          <TechItem Icon={TailwindIcon} name="Tailwind CSS" />
-        </div>
-        <div className="flex justify-start gap-4">
-          <p className="text-neutral-900 font-semibold text-xl">Tools & Others: </p>
+        </TechStackList>
+        <TechStackList title="Tools & Others: ">
           <TechItem Icon={GitIcon} name="Git" />
           <TechItem Icon={JiraIcon} name="Jira" />
-        </div>
+          <TechItem Icon={TailwindIcon} name="Tailwind CSS" />
+        </TechStackList>
       </div>
     </section>
   );
